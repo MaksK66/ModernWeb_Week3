@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const userID = params.get('id');
 
-fetch('https://dummyjson.com/users/${userID}')
+fetch(`https://dummyjson.com/users/${userId}`)
     .then(response => response.json())
     .then(data => {
         const detailsDiv = document.getElementById('staffDetails');
