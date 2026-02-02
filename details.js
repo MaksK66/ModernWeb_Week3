@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-const userID = params.get('id');
+const userId = params.get('id');
 
 fetch(`https://dummyjson.com/users/${userId}`)
     .then(response => response.json())
